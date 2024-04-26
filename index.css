@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1F4068;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #1F4068;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .header-nav-principal{
+        display: flex;
+        margin-right: 240px;
+        margin-left: 25px;
+        align-items: center;
+
+        .ícono{
+            display: flex;
+            margin-top: 8px;
+            margin-right: 60px;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+ul{
+    display: flex;
+}
+& li{
+    list-style: none;
+    margin-right: 22px;
+}
+.sin-subrayado{
+    color: #E1F7F5;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.sin-subrayado-footer{
+    color: #1F4068;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight:700;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #E1F7F5;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* MAIN */
+
+main{
+
+    .main-estrenos{
+        h2{
+            color: #E1F7F5;
+            margin: 20px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .containerPeliculas{
+            padding-bottom: 30px;
+            margin-left: 20PX;
+            margin-right: 20px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .pelicula{
+                margin-right: 20px;
+                width: 200px;
+                height: 300px;
+                background-color: grey;
+                border-radius: 10px;
+                
+                .imágen-peli{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+            }
+
+        }
+    }
+    .main-explorar{
+        color: white;
+        background: linear-gradient(to right top, #0000008a, #0000008a), url(imagenes/12.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .suscribite{
+            padding: 15px;
+            background-color: #E43F5A;
+            border-radius: 15px;
+        }
+
+        h1{
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        }
+    }
+
+}
