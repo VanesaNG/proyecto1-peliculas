@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "badaboom" ;
+    src: url(fuentes/badaboom_bb/BADABB__.TTF);
+}
+@font-face {
+    font-family: "coolvetica";
+    src: url(fuentes/coolvetica/coolvetica\ rg.otf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,24 +22,67 @@ body{
 /* HEADER */
 
 header{
-    background-color: #1F4068;
+    height: 120px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #1F4068;
     position: sticky;
     top: 0;
     z-index: 10;
     .header-nav-principal{
-        display: flex;
-        margin-right: 240px;
-        margin-left: 25px;
-        align-items: center;
+
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-row-gap: 12px;
+
+        .nombre-marca{
+            font-family: badaboom;
+            font-size: 2.25rem;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px #E43F5A;
+        }
 
         .ícono{
+            grid-area: 1/1/span 2;
             display: flex;
-            margin-top: 8px;
             margin-right: 60px;
             align-items: center;
         }
+        .ul-items-principal{
+            margin-top: 10px;
+            grid-area: 2/2/3;
+            align-self: start;
+        }
+        .header-nav-sesión{
+            grid-area: 1/4/span 2;
+            align-self: center;
+        }
+
+        .form-busqueda{
+            grid-row: 1;
+            grid-column: 2/3;
+            align-self: end;
+            display: flex;
+            .input-buscador{
+                height: 40px;
+                width: 550px;
+                padding-left: 15px;
+                border-radius: 20px;
+                margin-right: 10px;
+            }
+            .boton-buscador{
+                height: 40px;
+                width: 90px;
+                border-radius: 20px;
+
+            }
+
+
+        }
+
     }
 }
 
@@ -40,10 +93,12 @@ ul{
     display: flex;
 }
 & li{
+
     list-style: none;
-    margin-right: 22px;
+    margin-right: 20px;
 }
 .sin-subrayado{
+    font-family: "coolvetica";
     color: #E1F7F5;
     font-size: 20px;
     text-decoration: none;
@@ -129,14 +184,18 @@ main{
         }
 
         h1{
-            font-size: 5rem;
+            font-family: badaboom;
+            text-shadow: 3px 3px 5px #E43F5A;
+            letter-spacing: 4px;
+            font-size: 7rem;
             font-weight: 700;
             margin-bottom: 10px;
         }
 
         h2{
+        font-family: coolvetica;
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 400;
         margin-bottom: 40px;
         }
     }
