@@ -7,7 +7,6 @@
     src: url(fuentes/coolvetica/coolvetica\ rg.otf);
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -15,34 +14,31 @@
 }
 
 body{
-    background-color: #1F4068;
+    background-color: #70aac9;
 }
 
-
-/* HEADER */
-
 header{
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1F4068;
+    background-color: #0E46A3;
     position: sticky;
     top: 0;
     z-index: 10;
+
     .header-nav-principal{
 
-        width: 1200px;
+        width: 1250px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2,1fr);
-        grid-row-gap: 12px;
 
         .nombre-marca{
             font-family: badaboom;
-            font-size: 2.25rem;
+            font-size: 3.2rem;
             letter-spacing: 1px;
-            text-shadow: 2px 2px 4px #E43F5A;
+            text-shadow: 2px 2px 4px black;
         }
 
         .ícono{
@@ -52,13 +48,25 @@ header{
             align-items: center;
         }
         .ul-items-principal{
-            margin-top: 10px;
             grid-area: 2/2/3;
-            align-self: start;
+            align-self: end;
         }
-        .header-nav-sesión{
+        .ul-header-nav-sesión{
             grid-area: 1/4/span 2;
             align-self: center;
+            .li-nav-sesion{
+                background-color: #70aac9;
+                padding: 10px;
+                border-radius: 10px;
+                border-width: 0px 3px;
+                border-style: solid;
+                border-color: #D24545;
+                #a-nav-sesion{
+                    color: #0C0C0C;
+                }
+
+            }
+
         }
 
         .form-busqueda{
@@ -66,24 +74,30 @@ header{
             grid-column: 2/3;
             align-self: end;
             display: flex;
-            .input-buscador{
+            .input-buscador{ 
+                font-family: "coolvetica";
+                font-size: 1rem;
+                background-color: #E1F7F5;
                 height: 40px;
                 width: 550px;
                 padding-left: 15px;
-                border-radius: 20px;
                 margin-right: 10px;
+                border: 2px solid #0C0C0C;
+                border-radius: 5px;
             }
             .boton-buscador{
+                font-family: "coolvetica";
+                font-size: 1rem;
+                background-color: #E1F7F5;
                 height: 40px;
                 width: 90px;
-                border-radius: 20px;
-
+                border: 2px solid #0C0C0C;
+                border-radius: 5px;
             }
-
-
         }
 
     }
+
 }
 
 
@@ -105,6 +119,7 @@ ul{
     white-space: nowrap;
 }
 .sin-subrayado-footer{
+    font-family: "coolvetica";
     color: #1F4068;
     font-size: 20px;
     text-decoration: none;
@@ -121,7 +136,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -131,7 +145,8 @@ main{
 
     .main-estrenos{
         h2{
-            color: #E1F7F5;
+            font-family: "coolvetica";
+            color: #0E46A3;
             margin: 20px;
             font-size: 2.5rem;
             font-weight: 700;
@@ -176,16 +191,22 @@ main{
         flex-direction: column;
         align-items: center;
         text-align: center;
-
+        
         .suscribite{
             padding: 15px;
-            background-color: #E43F5A;
+            background-color: #D24545;
             border-radius: 15px;
+            border: 1px solid #0E46A3;
+
+            #a-suscribite{
+                font-weight: 700;
+                color: #1F4068;
+            }
         }
 
         h1{
             font-family: badaboom;
-            text-shadow: 3px 3px 5px #E43F5A;
+            text-shadow: 3px 3px 5px black;
             letter-spacing: 4px;
             font-size: 7rem;
             font-weight: 700;
@@ -196,8 +217,76 @@ main{
         font-family: coolvetica;
         font-size: 2.5rem;
         font-weight: 400;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         }
+
     }
+
+    .prueba{
+        .div-de-prueba{
+            margin: 50px auto;
+            padding: 30px;
+            background: #5272F2;
+            background-size: cover;
+            width: 1200px;
+            border-radius: 15px;
+            border-width: 0 5px;
+            border-style: solid;
+            border-color: #D24545;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .div-de-prueba-h2{
+                color: #0C0C0C;
+                font-family: coolvetica;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .contenedor-TOP4{
+                margin-top: 20px;
+                display: flex;
+                gap: 35px;
+                justify-content:space-evenly;
+
+                .item-contenedor-top4{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .h3-top4{
+                        background-color: #0C0C0C;
+                        border-radius: 0 0 5px 5px;
+                        padding: 3px 10px;
+                        font-family: coolvetica;
+                        font-size: 3rem;
+                        font-weight: 700;
+                        color: #D24545;
+                    }
+                    .pelicula-top4{
+                        width: 250px;
+                      height: 380px;
+                      background-color: grey;
+                      border-radius: 10px;
+                      border: 7px solid #0C0C0C;
+
+                        .imágen-peli-top4{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+    
+            }
+
+
+
+        }
+
+
+    }
+
 
 }
